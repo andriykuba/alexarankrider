@@ -1,0 +1,71 @@
+package aku.web.tools.alexa;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Properties;
+
+import org.apache.commons.io.FileUtils;
+
+import com.google.gson.Gson;
+
+import jodd.jerry.Jerry;
+
+import aku.tools.Log;
+import aku.tools.Utils;
+
+public class RankReader {
+	private static final String SELECTOR_RANK = ".data-row1 .data:first";
+	
+	private static final String PROPERTIES_FILE = "config/reader.properties";
+	
+	private static final String PROPERTY_URL = "url.";
+	private static final String PROPERTY_URL_MAX = "url.max";
+	private static final String URL_MAX_DEFAULT = "100";
+
+	private static final String EXT_JSON = ".json";
+
+	public static void main(String[] args) throws Exception {
+		Log.log("Ranked Reader");
+		
+		Properties properties = loadProperties(PROPERTIES_FILE);
+		int max = Integer.parseInt(properties.getProperty(PROPERTY_URL_MAX, URL_MAX_DEFAULT));
+		
+		Map<String, String> ranks = new LinkedHashMap<String, String>();
+		for(int i=1; i<max; i++){
+			String url = properties.getProperty(PROPERTY_URL.concat(Integer.toString(i)));
+			if(url==null)continue;
+			String rank = readRank(url);
+			ranks.put(url, rank);
+		}
+		
+		String folderPath = properties.getProperty("folder");
+		save(folderPath, ranks);
+		
+		Log.log("done");
+	}
+	
+	private static void save(String folder, Map<String, String> ranks) throws IOException {
+		String json = new Gson().toJson(ranks);
+		File source = new File(folder, Utils.getCurrentDateString().concat(EXT_JSON));		
+		FileUtils.writeStringToFile(source, json, Utils.ENCODING);			
+	}
+
+	private static String readRank(String url) throws Exception {
+		Log.log("reading ", url, " ...");
+		String source = Utils.getSource(url);			
+		Jerry doc = Jerry.jerry(source);
+		String rank = Utils.trim(doc.$(SELECTOR_RANK).text());		
+		return rank;
+	}
+
+	private static Properties loadProperties(String name) throws Exception {
+		Properties prop = new Properties();
+        FileInputStream fis = new FileInputStream(name);
+        prop.load(fis);
+        return prop;
+	}
+
+}
