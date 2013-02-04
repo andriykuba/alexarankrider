@@ -8,7 +8,7 @@ The project is in the eclipse format
 Main features
 -------------
 
-Alexa is a good site to check you rank, unfortunatly it's does not store statistic for the sites that have less than 100,000 rank. 
+Alexa is a good site to check you rank, unfortunately it's does not store statistic for the sites that have less than 100,000 rank. 
 
 You could buy account, for store such statistic for you own site.
 
