@@ -9,5 +9,51 @@
 	<classpathentry kind="lib" path="lib/jodd/jodd-joy-3.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/jodd/jodd-swingspy-3.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/sl4j/slf4j-nop-1.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/deps/guava-11.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/deps/jsr305.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-analytics-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-analytics-meta-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-appsforyourdomain-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-appsforyourdomain-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-base-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-blogger-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-blogger-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-books-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-books-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-calendar-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-calendar-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-client-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-client-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-codesearch-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-codesearch-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-contacts-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-contacts-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-core-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-docs-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-docs-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-finance-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-finance-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-gtt-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-gtt-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-health-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-health-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-maps-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-maps-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-media-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-photos-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-photos-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-projecthosting-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-projecthosting-meta-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-sidewiki-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-sidewiki-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-sites-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-sites-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-spreadsheet-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-spreadsheet-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-webmastertools-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-webmastertools-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-youtube-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gdata/lib/gdata-youtube-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/javamail/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
